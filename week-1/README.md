@@ -40,7 +40,7 @@ Meskipun ada banyak perintah yang bisa digunakan dengan CLI, semua perintah ters
 
 ### Git dan Gitbash
 
-Gitbash adalah shell yang diinstall dalam windows sehingga perintah-perintahnya akan sama. 
+Gitbash adalah shell bash yang diinstall dalam windows sehingga perintah-perintahnya akan sama. 
 Berikut langkah awal untuk mencoba gitbash:
 1. Pastikan windows anda sudah menginstallnya, petunjuk lengkap bisa cek laman [official git](https://git-scm.com/)
 2. Buka gitbash atau bisa juga dengan mengklik kiri mouse dan pilih gitbash here.
