@@ -287,14 +287,6 @@ do {
 //4
 //5
 ```
-### Function Javascript
-
-function adalah sekumpulan kode yang digunakan untuk melakukan tugas tertentu.
-```
-function name(parameter1, parameter2, parameter3) {
-  // kode untuk dieksekusi
-}
-```
 
 
 ## Percabangan Javascript
