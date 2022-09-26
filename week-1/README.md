@@ -1,6 +1,245 @@
 # Writing and Presentation Test Week 1
 
 
+## Unix Command Line
+
+### CLI (Command Line Interface)
+Command Line Interface merupakan sebuah interface yang digunakan oleh user untuk bisa mengetikkan perintah dalam bentuk teks dan memberikan instruksi pada komputer untuk mengerjakan tugas tertentu.
+### Shell
+Shell merupakan sebuah pondasi atau interface antara perintah yang diketikkan di CLI dengan Sistem operasi, shell lah yang nantinya akan memproses semua perintah yang diketikkan untuk diteruskan ke dalam sistem operasi.
+
+Shell memiliki beberapa fungsi, di antaranya:
+- Menangani file dan direktori
+- Membuka dan menutup program
+- Mengelola proses komputer
+- Menjalankan task berulang
+
+Tipe  Shell ada banyak namun yang paling terkenal adalah dari windows dan linux yaitu
+- Windows Shell
+Windows shell secara default biasanya menggunakan CMD(Command Prompt)
+- Bash
+
+Bash sebenarnya salah satu tipe shell dalam linux, ada banyak tipe lagi seperti zsh, ksh, tcsh.
+
+Bash merupakan shell yang paling sering digunakan karena mudah dipahami dalam memgembangkan suatu program. Oleh karena itu untuk selanjutnya akan membahas lebih detail hanya pada Bash.
+
+### Bash
+
+Bash atau Bourne Again Shell adalah tipe shell yang digunakan di MacOS serta berbagai distribusi Linux, dan dikembangkan oleh Free Software Foundation. Tool ini juga bisa diinstall di Windows 10. Bash merupakan salah satu tipe shell yang bisa digunakan oleh user Linux, selain Tchs shell, Ksh shell, dan Zsh shell.
+
+Di sebagian besar distribusi Linux, Bash ada dalam menu Utilities. Di desktop Gnome, namanya adalah Terminal, sedangkan untuk KDE, namanya adalah Konsole.
+Sementara itu, di MacOS, program ini disebut Terminal.app. Untuk menjalankannya, buka Application -> Utilities -> Terminal. Atau, cukup ketikkan terminal di pencarian Spotlight.Setelah terminal terbuka, Anda bisa langsung mengetikkan perintah. Perintah biasanya terdiri dari perintah itu sendiri, argumen, dan opsi.
+
+Perintah memuat instruksi yang akan dijalankan, argumen memberitahukan tempat perintah harus dijalankan, dan opsi meminta modifikasi hasil perintah.
+Untuk menggunakan shell, kita harus tahu sintaksisnya lebih dulu. Cara ini juga dikenal sebagai shell scripting, yaitu penggunaan script di CLI untuk menjalankan task tertentu.
+
+Meskipun ada banyak perintah yang bisa digunakan dengan CLI, semua perintah tersebut umumnya terbagi ke dalam dua kategori:
+
+- Perintah untuk menangani atau mengelola proses
+- Perintah untuk menangani atau mengelola file'
+
+### Git dan Gitbash
+
+Gitbash adalah shell yang diinstall dalam windows sehingga perintah-perintahnya akan sama. 
+Berikut langkah awal untuk mencoba gitbash:
+1. Pastikan windows anda sudah menginstallnya, petunjuk lengkap bisa cek laman [official git](https://git-scm.com/)
+2. Buka gitbash atau bisa juga dengan mengklik kiri mouse dan pilih gitbash here.
+
+![Klik gitbash here](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/420f492d593ed7baf7594b90b186e01ad24183f9/Week%201./git-1.png)
+
+3. Berikut tampilan awal sebuah gitbash
+
+![tampilan awal](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/420f492d593ed7baf7594b90b186e01ad24183f9/Week%201./git-2.png)
+
+4. Ketikkan perintah, untuk mengetahui versi git kita
+```
+git -v
+```
+
+![cek versi](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/420f492d593ed7baf7594b90b186e01ad24183f9/Week%201./git-3.png)
+
+5. git berhasil diinstall dan digunakan
+
+### Perintah-perintah dalam bash
+
+### Navigasi Directory
+
+```bash
+pwd                       # Mengetahui posisi direktori sekarang
+ls                        # isi direktori
+ls -a|--all               # isi direktori termasuk file yang di hidden
+cd                        # pindah menuju direktori home
+cd namadirektori          # pindah ke direktori yang ditulis
+cd ../                    # keluar direktori satu folder
+```
+
+### Membuat folder
+
+```bash
+mkdir namadirektori                        # buat folder
+mkdir nama1 nama2                          # buat folder ganda
+```
+
+### Memindahkan sebuah direktori
+
+```bash
+cp namadirektori                                             # Copy directori
+mv namadirektori                                             # Memindahkan directori
+```
+
+### Deleting Directories
+
+```bash
+rmdir namadirektori                        # Hapus folder
+```
+
+### Membuat files
+
+```bash
+touch nama.txt             # buat file baru
+touch nama1.txt nama2.txt  # buat file ganda 
+touch {nama1,nama2}.txt        # buat file ganda
+```
+
+### Memindahkan Files
+
+```bash
+cp nama1.txt nama2.txt                                # Copy file
+mv nama1.txt nama2.txt                                # Memindahkan file
+```
+
+### Menghapus sebuah file
+
+```bash
+rm nama.txt            # Hapus file
+```
+
+### membaca atau membuka file
+
+```bash
+cat foo.txt            # membuka file
+less foo.txt           # membuka file satu page penuh dengan beberapa pengaturan
+head foo.txt           # membuka 10 line dari atas sebuah file
+tail foo.txt           # membuka 10 line dari bawah sebuah file
+```
+
+## Git Dasar
+
+GIT adalah sebuah tools bagi para programmer dan developer yang berfungsi sebagai control system untuk menjalankan proyek pengembangan software. GIT adalah singkatan dari Group Inclusive Tour. Tujuan penggunaan GIT yakni untuk mengelola versi source code program dengan menentukan baris serta kode yang akan ditambahkan atau diganti.
+
+### Implementasi Git
+Langkah-langkah yang harus dilakukan yaitu:
+1. Sudah menginstall git jika di windows namanya git bash
+2. Buat sebuah folder
+3. Masukkan beberapa file kodingan
+4. buka gitbash here 
+5. kemudian ketikkan perintah berikut
+```
+git init
+```
+![git-init](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/fc5b8f70e8d66ba2f106a37fe45118d724a36fb2/Week%201./gitbash-1.png)
+
+6. file git berhasil dibuat di folder tersebut
+7. setting username dan email dengan perintah 
+
+```
+git config --global user.name "Nama Anda"
+git config --global user.email "emailAnda@email.com"
+```
+![git-init](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/5ca21b7e8f37a1ce40b5e6acaae915058178aa74/Week%201./gitbash-2.png)
+
+8. jika sudah selesai dengan program yang dibuat dan ingin menyimpan prosesnya bisa menggunakan perintah
+
+```
+git add .
+```
+```
+git commit -m "Pesan Yang ingin ditambahkan"
+```
+![git-init](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/fc5b8f70e8d66ba2f106a37fe45118d724a36fb2/Week%201./git-bash3.png)
+
+9. Directory sudah terlacak dan tersimpan menggunakan git
+
+11. jika ingin diupload ke github bisa menggunakan perintah
+```
+git remote add origin https://github.com/Chopin44/Contoh.git
+git branch -M main
+git push -u origin main
+```
+![git-remote](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/fc5b8f70e8d66ba2f106a37fe45118d724a36fb2/Week%201./git-bash4.png)
+
+12. Jika berhasil akan muncul dalam github kita
+
+![git](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/fc5b8f70e8d66ba2f106a37fe45118d724a36fb2/Week%201./git-bash5.png)
+
+## Algoritma dan Data Struktur
+
+Algoritma adalah suatu proses atau langkah-langkah yang terstruktur atau berurutan untuk memecahkan suatu masalah.
+Seberapa penting algoritma dalam pemrogaman?
+
+Programming itu justru identik dengan memecahkan suatu permasalahan, maka dari itu algoritma merupakan pemeran utamanya
+bahasa pemrograman hanyalah pemeran pendamping
+Belajar algoritma sama aja dengan mengingat kembali alur berfikir yg terstruktur
+
+### Ciri-ciri Algoritma
+
+| Ciri          | Deskripsi                                | Contoh         |
+|---------------|------------------------------------------|----------------|
+| Input         | Memiliki 0 atau lebih inputan            | Telur + Minyak |
+| Output        | Memiliki min 1 buah output               | Telur          |
+| Definiteness  | Instruksi jelas tidak ambigu             | Digoreng       |
+| Finiteness    | Memiliki titik berhenti (stop)           | Telur Matang   |
+| Effectiveness | Sebisa mungkin tepat sasaran dan efisien |                |
+
+### Jenis Proses Algoritma
+
+| Proses     | Deskripsi                                                           | Contoh                                              |
+|------------|---------------------------------------------------------------------|-----------------------------------------------------|
+| Sequence   | Instruksi yg dijalankan secara berurutan                            | Gelas diisi dengan air, lalu air siap utk diminum   |
+| Selection  | Instruksi yg dijalankan jika memenuhi suatu kondisi                 | Jika lampu merah, saya akan berhenti                |
+| Iteration  | Instruksi yg berulang kali dijalankan selama memenuhi suatu kondisi | Selama belum sampai rumah, saya akan terus menyetir |
+| Concurrent | nstruksi yg dijalankan secara bersamaan                             | Ibu mencuci baju sambil membersihkan rumah          |
+
+### Penyajian Algoritma
+1. Deskriptif
+
+    penyajian yang dilakukan dengan bahasa sehari-hari.
+    contoh:
+    saya lapar, apa yang harus saya lakukan?
+    
+    sudah pasti yang dilakukan adalah makan, terus bagaimana prosesnya?
+    
+    saya ke dapur-ambil piring di rak-ambil nasi dan lauk pauk-kemudian makan
+    
+2. Flowchart
+
+    Flow chart atau diagram alir, penyajian algoritmanya lebih mudah dibaca karena memiliki tampilan visual. Flow chart menggunakan simbol bangun datar sebagai representasi dari proses yg dilakukan.
+    
+    ![git-init](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/1ccaa02a8eb3cceb7168d6714c523d970fc21e0c/Week%201./flowchart.png)
+
+3. Pseudo Code
+    Penulisan algoritma yg hampir menyerupai penulisan pada kode pemrograman disebut dengan pseudo code.
+    
+    ![git-init](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/1ccaa02a8eb3cceb7168d6714c523d970fc21e0c/Week%201./psuedocode.png)
+    
+### Data Struktur
+
+Struktur Data adalah sebuah cara untuk mengatur data (organize data) dengan cara yang memungkinkannya diproses dalam waktu yang efektif.
+
+Ada beberapa perintah struktur data yang dapat digunakan untuk mengatur data yaitu:
+
+- Array
+- Linked List
+- Stack
+- Queue
+- Tree
+- Hashing
+- Graph, dan lain-lain.
+
+Lalu apa bedanya Struktur Data dan Algoritma?
+Algoritma adalah seperangkat aturan yang harus diikuti menyelesaikan suatu masalah. Sedangkan Struktur data adalah cara untuk menyusun data.
+
+
 ## HTML
 HTML atau singkatan dari Hyper Text Markup Language merupakan sebuah bahasa struktural yang digunakan dalam membuat website, disebut bahasa struktural karena merupakan sebuah bahasa untuk membuat struktur-struktur dalam web atau bisa disebut sebagai kerangka web, sehingga bukan dikategorikan sebagai bahasa pemrogaman karena tidak menghasilkan sebuah fungsi.
 
@@ -516,243 +755,6 @@ console.log(nama)
 // error variabel constant
 ```
 
-## Unix Command Line
-
-### CLI (Command Line Interface)
-Command Line Interface merupakan sebuah interface yang digunakan oleh user untuk bisa mengetikkan perintah dalam bentuk teks dan memberikan instruksi pada komputer untuk mengerjakan tugas tertentu.
-### Shell
-Shell merupakan sebuah pondasi atau interface antara perintah yang diketikkan di CLI dengan Sistem operasi, shell lah yang nantinya akan memproses semua perintah yang diketikkan untuk diteruskan ke dalam sistem operasi.
-
-Shell memiliki beberapa fungsi, di antaranya:
-- Menangani file dan direktori
-- Membuka dan menutup program
-- Mengelola proses komputer
-- Menjalankan task berulang
-
-Tipe  Shell ada banyak namun yang paling terkenal adalah dari windows dan linux yaitu
-- Windows Shell
-Windows shell secara default biasanya menggunakan CMD(Command Prompt)
-- Bash
-
-Bash sebenarnya salah satu tipe shell dalam linux, ada banyak tipe lagi seperti zsh, ksh, tcsh.
-
-Bash merupakan shell yang paling sering digunakan karena mudah dipahami dalam memgembangkan suatu program. Oleh karena itu untuk selanjutnya akan membahas lebih detail hanya pada Bash.
-
-### Bash
-
-Bash atau Bourne Again Shell adalah tipe shell yang digunakan di MacOS serta berbagai distribusi Linux, dan dikembangkan oleh Free Software Foundation. Tool ini juga bisa diinstall di Windows 10. Bash merupakan salah satu tipe shell yang bisa digunakan oleh user Linux, selain Tchs shell, Ksh shell, dan Zsh shell.
-
-Di sebagian besar distribusi Linux, Bash ada dalam menu Utilities. Di desktop Gnome, namanya adalah Terminal, sedangkan untuk KDE, namanya adalah Konsole.
-Sementara itu, di MacOS, program ini disebut Terminal.app. Untuk menjalankannya, buka Application -> Utilities -> Terminal. Atau, cukup ketikkan terminal di pencarian Spotlight.Setelah terminal terbuka, Anda bisa langsung mengetikkan perintah. Perintah biasanya terdiri dari perintah itu sendiri, argumen, dan opsi.
-
-Perintah memuat instruksi yang akan dijalankan, argumen memberitahukan tempat perintah harus dijalankan, dan opsi meminta modifikasi hasil perintah.
-Untuk menggunakan shell, kita harus tahu sintaksisnya lebih dulu. Cara ini juga dikenal sebagai shell scripting, yaitu penggunaan script di CLI untuk menjalankan task tertentu.
-
-Meskipun ada banyak perintah yang bisa digunakan dengan CLI, semua perintah tersebut umumnya terbagi ke dalam dua kategori:
-
-- Perintah untuk menangani atau mengelola proses
-- Perintah untuk menangani atau mengelola file'
-
-### Git dan Gitbash
-
-Gitbash adalah shell yang diinstall dalam windows sehingga perintah-perintahnya akan sama. 
-Berikut langkah awal untuk mencoba gitbash:
-1. Pastikan windows anda sudah menginstallnya, petunjuk lengkap bisa cek laman [official git](https://git-scm.com/)
-2. Buka gitbash atau bisa juga dengan mengklik kiri mouse dan pilih gitbash here.
-
-![Klik gitbash here](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/420f492d593ed7baf7594b90b186e01ad24183f9/Week%201./git-1.png)
-
-3. Berikut tampilan awal sebuah gitbash
-
-![tampilan awal](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/420f492d593ed7baf7594b90b186e01ad24183f9/Week%201./git-2.png)
-
-4. Ketikkan perintah, untuk mengetahui versi git kita
-```
-git -v
-```
-
-![cek versi](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/420f492d593ed7baf7594b90b186e01ad24183f9/Week%201./git-3.png)
-
-5. git berhasil diinstall dan digunakan
-
-### Perintah-perintah dalam bash
-
-### Navigasi Directory
-
-```bash
-pwd                       # Mengetahui posisi direktori sekarang
-ls                        # isi direktori
-ls -a|--all               # isi direktori termasuk file yang di hidden
-cd                        # pindah menuju direktori home
-cd namadirektori          # pindah ke direktori yang ditulis
-cd ../                    # keluar direktori satu folder
-```
-
-### Membuat folder
-
-```bash
-mkdir namadirektori                        # buat folder
-mkdir nama1 nama2                          # buat folder ganda
-```
-
-### Memindahkan sebuah direktori
-
-```bash
-cp namadirektori                                             # Copy directori
-mv namadirektori                                             # Memindahkan directori
-```
-
-### Deleting Directories
-
-```bash
-rmdir namadirektori                        # Hapus folder
-```
-
-### Membuat files
-
-```bash
-touch nama.txt             # buat file baru
-touch nama1.txt nama2.txt  # buat file ganda 
-touch {nama1,nama2}.txt        # buat file ganda
-```
-
-### Memindahkan Files
-
-```bash
-cp nama1.txt nama2.txt                                # Copy file
-mv nama1.txt nama2.txt                                # Memindahkan file
-```
-
-### Menghapus sebuah file
-
-```bash
-rm nama.txt            # Hapus file
-```
-
-### membaca atau membuka file
-
-```bash
-cat foo.txt            # membuka file
-less foo.txt           # membuka file satu page penuh dengan beberapa pengaturan
-head foo.txt           # membuka 10 line dari atas sebuah file
-tail foo.txt           # membuka 10 line dari bawah sebuah file
-```
-
-## Git Dasar
-
-GIT adalah sebuah tools bagi para programmer dan developer yang berfungsi sebagai control system untuk menjalankan proyek pengembangan software. GIT adalah singkatan dari Group Inclusive Tour. Tujuan penggunaan GIT yakni untuk mengelola versi source code program dengan menentukan baris serta kode yang akan ditambahkan atau diganti.
-
-### Implementasi Git
-Langkah-langkah yang harus dilakukan yaitu:
-1. Sudah menginstall git jika di windows namanya git bash
-2. Buat sebuah folder
-3. Masukkan beberapa file kodingan
-4. buka gitbash here 
-5. kemudian ketikkan perintah berikut
-```
-git init
-```
-![git-init](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/fc5b8f70e8d66ba2f106a37fe45118d724a36fb2/Week%201./gitbash-1.png)
-
-6. file git berhasil dibuat di folder tersebut
-7. setting username dan email dengan perintah 
-
-```
-git config --global user.name "Nama Anda"
-git config --global user.email "emailAnda@email.com"
-```
-![git-init](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/5ca21b7e8f37a1ce40b5e6acaae915058178aa74/Week%201./gitbash-2.png)
-
-8. jika sudah selesai dengan program yang dibuat dan ingin menyimpan prosesnya bisa menggunakan perintah
-
-```
-git add .
-```
-```
-git commit -m "Pesan Yang ingin ditambahkan"
-```
-![git-init](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/fc5b8f70e8d66ba2f106a37fe45118d724a36fb2/Week%201./git-bash3.png)
-
-9. Directory sudah terlacak dan tersimpan menggunakan git
-
-11. jika ingin diupload ke github bisa menggunakan perintah
-```
-git remote add origin https://github.com/Chopin44/Contoh.git
-git branch -M main
-git push -u origin main
-```
-![git-remote](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/fc5b8f70e8d66ba2f106a37fe45118d724a36fb2/Week%201./git-bash4.png)
-
-12. Jika berhasil akan muncul dalam github kita
-
-![git](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/fc5b8f70e8d66ba2f106a37fe45118d724a36fb2/Week%201./git-bash5.png)
-
-## Algoritma dan Data Struktur
-
-Algoritma adalah suatu proses atau langkah-langkah yang terstruktur atau berurutan untuk memecahkan suatu masalah.
-Seberapa penting algoritma dalam pemrogaman?
-
-Programming itu justru identik dengan memecahkan suatu permasalahan, maka dari itu algoritma merupakan pemeran utamanya
-bahasa pemrograman hanyalah pemeran pendamping
-Belajar algoritma sama aja dengan mengingat kembali alur berfikir yg terstruktur
-
-### Ciri-ciri Algoritma
-
-| Ciri          | Deskripsi                                | Contoh         |
-|---------------|------------------------------------------|----------------|
-| Input         | Memiliki 0 atau lebih inputan            | Telur + Minyak |
-| Output        | Memiliki min 1 buah output               | Telur          |
-| Definiteness  | Instruksi jelas tidak ambigu             | Digoreng       |
-| Finiteness    | Memiliki titik berhenti (stop)           | Telur Matang   |
-| Effectiveness | Sebisa mungkin tepat sasaran dan efisien |                |
-
-### Jenis Proses Algoritma
-
-| Proses     | Deskripsi                                                           | Contoh                                              |
-|------------|---------------------------------------------------------------------|-----------------------------------------------------|
-| Sequence   | Instruksi yg dijalankan secara berurutan                            | Gelas diisi dengan air, lalu air siap utk diminum   |
-| Selection  | Instruksi yg dijalankan jika memenuhi suatu kondisi                 | Jika lampu merah, saya akan berhenti                |
-| Iteration  | Instruksi yg berulang kali dijalankan selama memenuhi suatu kondisi | Selama belum sampai rumah, saya akan terus menyetir |
-| Concurrent | nstruksi yg dijalankan secara bersamaan                             | Ibu mencuci baju sambil membersihkan rumah          |
-
-### Penyajian Algoritma
-1. Deskriptif
-
-    penyajian yang dilakukan dengan bahasa sehari-hari.
-    contoh:
-    saya lapar, apa yang harus saya lakukan?
-    
-    sudah pasti yang dilakukan adalah makan, terus bagaimana prosesnya?
-    
-    saya ke dapur-ambil piring di rak-ambil nasi dan lauk pauk-kemudian makan
-    
-2. Flowchart
-
-    Flow chart atau diagram alir, penyajian algoritmanya lebih mudah dibaca karena memiliki tampilan visual. Flow chart menggunakan simbol bangun datar sebagai representasi dari proses yg dilakukan.
-    
-    ![git-init](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/1ccaa02a8eb3cceb7168d6714c523d970fc21e0c/Week%201./flowchart.png)
-
-3. Pseudo Code
-    Penulisan algoritma yg hampir menyerupai penulisan pada kode pemrograman disebut dengan pseudo code.
-    
-    ![git-init](https://github.com/Chopin44/Writing-and-Presentation-Test/blob/1ccaa02a8eb3cceb7168d6714c523d970fc21e0c/Week%201./psuedocode.png)
-    
-### Data Struktur
-
-Struktur Data adalah sebuah cara untuk mengatur data (organize data) dengan cara yang memungkinkannya diproses dalam waktu yang efektif.
-
-Ada beberapa perintah struktur data yang dapat digunakan untuk mengatur data yaitu:
-
-- Array
-- Linked List
-- Stack
-- Queue
-- Tree
-- Hashing
-- Graph, dan lain-lain.
-
-Lalu apa bedanya Struktur Data dan Algoritma?
-Algoritma adalah seperangkat aturan yang harus diikuti menyelesaikan suatu masalah. Sedangkan Struktur data adalah cara untuk menyusun data.
 
     
 
