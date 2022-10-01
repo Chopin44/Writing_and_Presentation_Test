@@ -516,3 +516,217 @@ document.write("Hello World")
 ```
 
 5. DOM berhasil dimanipulasi dengan menambahkan sebuah kata Hello World.
+
+### Manipulasi Element
+
+Dengan adanya DOM kita dapat memanipulasi sebuah element, seperti contoh berikut:
+
+1. Melanjutkan dari yang di atas, kita sudah mempunyai file HTML dan sebuah file JS.
+2. Untuk file HTML kita buat tag div dengan Id coba
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+  // tag dan id ini yang akan dimanipulasi
+  <div id="coba"></div>
+</body>
+
+
+
+</html>
+```
+
+laman sebelum dimanipulasi
+
+![dom-element-1]()
+
+3. Ketikkan perintah berikut ke dalam file js
+
+```
+// variabel a sebagai penampung yang didapat dari getElement berdasar Id
+let a = document.getElementById("coba")
+
+// bagian ini mengubah isian text yang tadinya kosong
+a.innerText = ("Hello World")
+
+```
+
+laman sesusdah dimanipulasi
+
+![dom-element-2]()
+
+### Manipulasi Style
+
+Selain element, style dari sebuah element juga dapat kita ubah, seperti contoh berikut:
+
+1. Meneruskan contoh di atas
+2. Kita tambahkan kode berikut di file js
+
+```
+a.style.color = "blue";
+
+```
+
+3. Kata hello World akan berubah warna menjadi biru
+
+![dom-element-3]()
+
+### Event dan Event Listener
+
+Event adalah sesuatu kondisi untuk memberikan perintah terhadap element tertentu agar membuat web tersebut lebih interaktif. Sedangkan Event Listener adalah suatu Event yang ditembakan langsung ke dalam sebuah element tertentu lebih spesifik.
+
+Contoh dari event sebagai berikut:
+
+1. Kita ingin menampilkan alert ketika teks hello world diklik
+2. Dengan meneruskan kode latihan di awal, tambahkan beberapa kode berikut di file js:
+
+```
+let a = document.getElementById("coba")
+a.innerText = ("Hello World")
+
+a.style.color = "blue";
+
+// fungsi untuk menampilkan alert
+function iniAlert() {
+ alert("Hello World!")
+}
+
+```
+
+3. Dengan meneruskan kode latihan di awal, tambahkan beberapa kode berikut di file HTML:
+
+```
+<body>
+    // event onclick yang artinya jika diklik akan memanggil fungsi iniAlert()
+    <div id="coba" onclik="iniAlert()"></div>
+</body>
+
+```
+
+4. Jika berhasil akan tampil seperti berikut:
+
+![dom-event-1]()
+
+Nah sekarang lanjut cara menggunakan event listener, sebagai berikut contohnya:
+
+1. Seperti biasa kita akan melanjutkan latihan sebelumnya
+2. hapus event onclick, berikut:
+
+```
+<body>
+    <div id="coba"></div>
+</body>
+
+```
+
+3. Tambahkan langsung ke dalam elementnya, seperti berikut:
+
+```
+let a = document.getElementById("coba")
+a.innerText = ("Hello World")
+
+a.style.color = "blue";
+
+a.addEventListener("click", function iniAlert() {
+    alert("Hello World!")
+   })
+
+```
+
+4. Laman akan tampil sama seperti sebelumnya yaitu alert hello world jika berhasil
+
+### Form DOM
+
+Kita akan mencoba membuat sebuah form login menggunakan DOM sehingga nanti akan ada sebuah validasi di dalamnya.
+
+1. Seperti biasa siapkan file HTML isikan kode berikut:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <form id="login">
+        <div>Username: </div>
+        <input id="username" type="text">
+        <div>Password: </div>
+        <input id="password" type="password">
+        <input type="submit">
+    </form>
+</body>
+</html>
+```
+
+2. Dan file js isikan file berikut:
+
+```
+// tangkap semua element
+let formSubmit = document.getElementById("login")
+let inputUsername = document.getElementById("username")
+let inputPassword = document.getElementById("password")
+
+// variabel untuk validasi username dan password
+let validasi = {
+    username: "rodhi",
+    password: "123"
+}
+
+//mengisikan formSubmit dengan sebuah event
+formSubmit.addEventListener("submit", (event) => {
+    event.preventDefault()
+
+    // variabel untuk menampung username dan password ketika diinput
+    let userLogin = {
+        username: inputUsername.value,
+        password: inputPassword.value
+    }
+
+    // cek variabel validasi dengan yang diinputkan
+    login = userLogin.username == validasi.username
+    && userLogin.password == validasi.password
+
+    // memunculkan alert ketika berhasil login atau gagal
+    if (login) {
+        alert("Login Berhasil")
+    } else {
+        alert("login gagal")
+    }
+
+    // mengosongkan form ketika selesai disubmit
+    loginForm.reset()
+
+})
+
+```
+
+3. Buka html lewat browser, hasilnya akan seperti ini:
+
+![dom-form-1]()
+
+4. Kemudian jika diisikan username dan password terserah akan muncul login gagal
+
+![dom-form-12]()
+
+5. Sedangkan jika diisikan username rodhi dan password 123 akan muncul alert login berhasil
+
+![dom-form-3]()
