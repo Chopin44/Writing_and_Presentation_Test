@@ -549,7 +549,7 @@ Dengan adanya DOM kita dapat memanipulasi sebuah element, seperti contoh berikut
 
 laman sebelum dimanipulasi
 
-![dom-element-1]()
+![dom-element-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/4e5e7d7ef00132c19a05c00cdfa8f52cb010a122/week-2/images/dom-element-1.png)
 
 3. Ketikkan perintah berikut ke dalam file js
 
@@ -564,7 +564,7 @@ a.innerText = ("Hello World")
 
 laman sesusdah dimanipulasi
 
-![dom-element-2]()
+![dom-element-2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/4e5e7d7ef00132c19a05c00cdfa8f52cb010a122/week-2/images/dom-element-2.png)
 
 ### Manipulasi Style
 
@@ -580,7 +580,7 @@ a.style.color = "blue";
 
 3. Kata hello World akan berubah warna menjadi biru
 
-![dom-element-3]()
+![dom-element-3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/4e5e7d7ef00132c19a05c00cdfa8f52cb010a122/week-2/images/dom-element-3.png)
 
 ### Event dan Event Listener
 
@@ -616,7 +616,7 @@ function iniAlert() {
 
 4. Jika berhasil akan tampil seperti berikut:
 
-![dom-event-1]()
+![dom-event-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/4e5e7d7ef00132c19a05c00cdfa8f52cb010a122/week-2/images/dom-event-1.png)
 
 Nah sekarang lanjut cara menggunakan event listener, sebagai berikut contohnya:
 
@@ -721,12 +721,12 @@ formSubmit.addEventListener("submit", (event) => {
 
 3. Buka html lewat browser, hasilnya akan seperti ini:
 
-![dom-form-1]()
+![dom-form-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/4e5e7d7ef00132c19a05c00cdfa8f52cb010a122/week-2/images/dom-form-1.png)
 
 4. Kemudian jika diisikan username dan password terserah akan muncul login gagal
 
-![dom-form-12]()
+![dom-form-2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/4e5e7d7ef00132c19a05c00cdfa8f52cb010a122/week-2/images/dom-form-2.png)
 
 5. Sedangkan jika diisikan username rodhi dan password 123 akan muncul alert login berhasil
 
-![dom-form-3]()
+![dom-form-3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/4e5e7d7ef00132c19a05c00cdfa8f52cb010a122/week-2/images/dom-form-3.png)
