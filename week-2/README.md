@@ -521,7 +521,7 @@ document.write("Hello World")
 
 Dengan adanya DOM kita dapat memanipulasi sebuah element, seperti contoh berikut:
 
-1. Melanjutkan dari yang di atas, kita sudah mempunyai file HTML dan sebuah file JS.
+1. Melanjutkan dari yang di [atas](https://github.com/Chopin44/Writing_and_Presentation_Test/tree/main/week-2#cara-menjalankan-dom), kita sudah mempunyai file HTML dan sebuah file JS.
 2. Untuk file HTML kita buat tag div dengan Id coba
 
 ```
@@ -570,7 +570,7 @@ laman sesusdah dimanipulasi
 
 Selain element, style dari sebuah element juga dapat kita ubah, seperti contoh berikut:
 
-1. Meneruskan contoh di atas
+1. Meneruskan contoh di [atas](https://github.com/Chopin44/Writing_and_Presentation_Test/tree/main/week-2#manipulasi-element)
 2. Kita tambahkan kode berikut di file js
 
 ```
@@ -589,7 +589,7 @@ Event adalah sesuatu kondisi untuk memberikan perintah terhadap element tertentu
 Contoh dari event sebagai berikut:
 
 1. Kita ingin menampilkan alert ketika teks hello world diklik
-2. Dengan meneruskan kode latihan di awal, tambahkan beberapa kode berikut di file js:
+2. Dengan meneruskan kode latihan di [awal](https://github.com/Chopin44/Writing_and_Presentation_Test/tree/main/week-2#manipulasi-style), tambahkan beberapa kode berikut di file js:
 
 ```
 let a = document.getElementById("coba")
