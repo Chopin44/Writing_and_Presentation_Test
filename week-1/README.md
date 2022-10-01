@@ -951,11 +951,11 @@ Karena sudah berkenalan dan mengetahui fungsi dari sebuah DOM maka disini kita a
 
 1. Ingat kita harus memiliki file HTML karena javascript dapat berjalan hanya jika menempel di dalam file HTML karena sifatnya intrepreter.
 2. Buat file HTML kemudian bisa langsung dibuka melalui browser.
-   ![DOM-1]()
+   ![DOM-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/734ac0ecf06369b3d4f8aeb266b433351f858e94/week-1/images/DOM-1.png)
 3. Disini kita menggunakan langsung console sebagai penulisan kode-kode javascript.
-   ![DOM-2]()
+   ![DOM-2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/734ac0ecf06369b3d4f8aeb266b433351f858e94/week-1/images/DOM-2.png)
 4. Ketikkan perintah berikut:
-   ![DOM-3]()
+   ![DOM-3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/734ac0ecf06369b3d4f8aeb266b433351f858e94/week-1/images/DOM-3.png)
 
 ```
 //Method Write() menghapus semua element yg ada di HTML
