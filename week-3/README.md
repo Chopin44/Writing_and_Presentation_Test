@@ -23,7 +23,7 @@ Dalam sebuah programming, mengorganisasi data dan menyimpan data adalah konsep p
 
 Dalam array kita dapat banyak menyimpan tipe data yang berbeda. Disitu sebenarnya ada sebuah aturan, bahwa index array atau nilai array itu dimulai dari angka 0.
 
-![array-1]()
+![array-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/1de4c49ea951e7019868ca8ff5f1909dd6ca849b/week-3/images/array-1.png)
 
 ### Cara Memanggil Data dalam Array
 
