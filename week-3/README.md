@@ -582,7 +582,7 @@ undangan("Rodhi", "Yukino", undang)
 // Iya diundang
 ```
 
-2. Promise
+2. Promises
 
 Promise adalah Sebuah mekanisme baru pada fitur javascript / ES6 yang merepresentasikan sebuah object request pengolahan data yang dilakukan secara asynchronous seperti ajax, dan promise ini mewakili sebuah operasi yang belum selesai, tetapi diharapkan di masa mendatang.
 
@@ -608,5 +608,59 @@ Promises
 .catch(res => console.log(`Its Ok ! ${res}`))
 
 // Ok janji ditepati
+
+```
+
+3. Async/await
+
+Async - await adalah salah satu fitur baru dari javascript yang digunakan untuk menangani hasil dari sebuah Promise.
+
+Sedangkan await berfungsi untuk menunda sebuah kode dijalankan sampai proses asynchronous berhasil.
+
+Contoh penulisan async & await:
+
+```
+aysnc function hello(){
+    let result = await 'Hello'
+    return result
+}
+// es6
+const hello1 = async () => {
+    let result = await 'hello'
+    return result
+}
+```
+
+## Web Storage
+
+Web storage adalah penyimpanan per origin (per domain dan protokol). Semua halaman, dari satu sumber, dapat menyimpan dan mengakses data yang sama.
+
+Penyimpanan web HTML menyediakan dua objek untuk menyimpan data pada klien, yaitu :
+
+- window.localStorage – menyimpan data tanpa waktu kadaluwarsa
+- window.sessionStorage – menyimpan data untuk satu sesi (data hilang saat tab browser ditutup)
+  Sebelum menggunakan web browser, periksa apakah browser mendukung localStorage dan sessionStorage:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="result"></div>
+
+<script>
+// cek browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("lastname", "Smith");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+  document.getElementById("result").innerHTML = "Maaf, browser Anda tidak mendukung Penyimpanan Web...";
+}
+</script>
+
+</body>
+</html>
 
 ```
