@@ -123,19 +123,19 @@ Dalam github kita dapat berkolaborasi dengan sesama programmer lainnya dengan me
 
 1.  Membuat Organisasi
 
-![git-collab-1]()
+![git-collab-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-collab-1.png)
 
 2.  Klik yang free karena disini kita hanya sebagai latihan
 
-![git-collab-2]()
+![git-collab-2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-collab-2.png)
 
 3.  Isi form sesuai petunjuk
 
-![git-collab-3]()
+![git-collab-3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-collab-3.png)
 
 4.  Setelah melakukan langkah-langkah isi form, maka akan muncul seperti ini, artinya akun organisasi berhasil dibuat kita dapat melakukan beberapa perubahan seperti membuat repository, menambahkan anggota, pull request, dll
 
-![git-collab-4]()
+![git-collab-4](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-collab-4.png)
 
 ### Git Merge
 
@@ -143,31 +143,31 @@ GIT merge adalah perintah untuk menggabungkan kedua cabang atau branch pada suat
 
 1. Siapkan sebuah repository dengan cara create repository di github
 
-![git-collab-5]()
+![git-collab-5](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-collab-5.png)
 
 2. Berikut jika repository berhasil dibuat
 
-![git-collab-6]()
+![git-collab-6](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-collab-6.png)
 
 3. Tambahkan branch baru
 
-![git-collab-7]()
+![git-collab-7](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-collab-7.png)
 
 4. Branch baru berhasil dibuat
 
-![git-collab-8]()
+![git-collab-8](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-collab-8.png)
 
 5. Kita coba git clone repository tersebut ke dalam local
 
-![git-collab-9]()
+![git-collab-9](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-collab-9.png)
 
 6. Kita lakukan beberapa perubahan file readme pada branch dev, gunakan perintah `git switch <nama branch>` untuk berganti cabang
 
-![git-collab-10]()
+![git-collab-10](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-collab-10.png)
 
 7. kita coba lakukan merge pada branch main, lalu coba kita git push
 
-![git-collab-11]()
+![git-collab-11](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-collab-11.png)
 
 8. hasilnya akan sama antara 2 cabang
 
@@ -175,24 +175,24 @@ GIT merge adalah perintah untuk menggabungkan kedua cabang atau branch pada suat
 
 1. lakukan langkah-langkah sperti sebelumnya
 
-![git-pull-request-1]()
+![git-pull-request-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-pull-request-1.png)
 
 2. Disini akan muncul notifikasi pull request, artinya kita bisa melakukan sebuah
    request ke dalam branch main, coba kita klik
 
-![git-pull-request-2]()
+![git-pull-request-2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-pull-request-2.png)
 
 3. akan masuk ke halaman ini, kita coba create request
 
-![git-pull-request-3]()
+![git-pull-request-3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-pull-request-3.png)
 
 4. Kita coba konfirmasi request
 
-![git-pull-request-4]()
+![git-pull-request-4](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-pull-request-4.png)
 
 5. Request berhasil terpenuhi dan tidak ada konflik, merge atau penggabungan berhasil
 
-![git-pull-request-5]()
+![git-pull-request-5](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-pull-request-5.png)
 
 6. Hasilnya kan sama seperti git merge di atas, keduanya akan sama antara branch nya
 
@@ -200,16 +200,16 @@ GIT merge adalah perintah untuk menggabungkan kedua cabang atau branch pada suat
 
 Ketika kita melakukan merge pada suatu merge namun branch tersebut memiliki suatu error seperti ada letak kode yang sama maka akan timbul sebuah conflict seperti berikut:
 
-![git-conflict-1]()
+![git-conflict-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-conflict-1.png)
 
 1. Cukup klik sesuai yang kita inginkan, kode mana yang sesuai maka git akan otomatis menyesuaikan
 
-![git-conflict-2]()
+![git-conflict-2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-conflict-2.png)
 
 2. Seperti berikut hasilnya, kita coba simpan dan push
 
-![git-conflict-3]()
+![git-conflict-3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-conflict-3.png)
 
 3. branch main akan berisi sesuai yang kita pilih
 
-![git-conflict-4]()
+![git-conflict-4](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-conflict-4.png)
