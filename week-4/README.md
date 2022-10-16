@@ -224,19 +224,19 @@ Tools atau alat yang biasa digunakan oleh seorang developer biasanya terdapat pa
 
 1. Buka web browser dan buka laman yang ingin kita cek
 
-![responsive-1]()
+![responsive-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/db1dc7e25b67adbe5385cf47b9a505fc3fdd05e2/week-4/images/responsive-1.png)
 
 2. Klik kanan dan klik inspect
 
-![responsive-2]()
+![responsive-2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/db1dc7e25b67adbe5385cf47b9a505fc3fdd05e2/week-4/images/responsive-2.png)
 
 3. Klik logo device sebelah elements
 
-![responsive-3]()
+![responsive-3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/db1dc7e25b67adbe5385cf47b9a505fc3fdd05e2/week-4/images/responsive-3.png)
 
 4. Nah disini kita bisa pilih dimensi atau ukuran sesuai yang kita inginkan, jika layout web menyesuaikan dengan yang dipilih dan masih rapi berarti web kita responsive
 
-![responsive-4]()
+![responsive-4](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/db1dc7e25b67adbe5385cf47b9a505fc3fdd05e2/week-4/images/responsive-4.png)
 
 ### Viewport
 
@@ -331,7 +331,7 @@ CSS code :
 
 2. Hasilnya akan seperti ini:
 
-![responsive-5]()
+![responsive-5](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/db1dc7e25b67adbe5385cf47b9a505fc3fdd05e2/week-4/images/responsive-5.png)
 
 Dari implementasi di atas bisa disimpulkan bahwa units em adalah units relative karena mengikuti ukuran dari suatu font-size. misal font-sizenya 10px dengan padding 2em, ukuran 10px akan dikali 2 sehingga 2em sama dengan 20px. Sedangkan di box-2 padding 1 em menyesuaikan juga dengan font-sizenya yaitu 20px karena hanya 1em, 20 dikalikan 1 hasilnya akan sama yaitu 20px.
 
@@ -389,11 +389,11 @@ Hasilnya :
 
 Jika kurang dari 1200px:
 
-![responsive-6]()
+![responsive-6](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/db1dc7e25b67adbe5385cf47b9a505fc3fdd05e2/week-4/images/responsive-6.png)
 
 Jika lebih dari 1200px
 
-![responsive-7]()
+![responsive-7](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/db1dc7e25b67adbe5385cf47b9a505fc3fdd05e2/week-4/images/responsive-7.png)
 
 Image akan berada di kanan atau displaynya flex
 
@@ -460,7 +460,7 @@ Contoh Implementasi flexbox :
 
 Hasilnya:
 
-![flebox]()
+![flexbox](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/db1dc7e25b67adbe5385cf47b9a505fc3fdd05e2/week-4/images/flexbox.png)
 
 Contoh Implementasi Grid :
 
@@ -535,7 +535,7 @@ Contoh Implementasi Grid :
 
 Hasilnya :
 
-![grid]()
+![grid](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/db1dc7e25b67adbe5385cf47b9a505fc3fdd05e2/week-4/images/grid.png)
 
 ## Bootstrap
 
@@ -594,7 +594,7 @@ Untuk lebih jelasnya kita langsung saja masuk ke dalam implementasi:
 
 Hasilnya:
 
-![Bootstrap-1]()
+![Bootstrap-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/db1dc7e25b67adbe5385cf47b9a505fc3fdd05e2/week-4/images/Bootstrap-1.png)
 
 ### Layout dalam Bootstrap
 
@@ -642,7 +642,7 @@ Berikut Contoh Penerapanya:
 
 Hasilnya :
 
-![Bootstrap-2]()
+![Bootstrap-2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/db1dc7e25b67adbe5385cf47b9a505fc3fdd05e2/week-4/images/Bootstrap-2.png)
 
 ### Component Bootstrap
 
@@ -717,4 +717,4 @@ berikut contoh salah satu penggunaan component bootstrap yaitu component Card
 
 Hasilnya :
 
-![Bootstrap-3]()
+![Bootstrap-3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/db1dc7e25b67adbe5385cf47b9a505fc3fdd05e2/week-4/images/Bootstrap-3.png)
