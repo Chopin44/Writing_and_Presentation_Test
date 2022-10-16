@@ -213,3 +213,508 @@ Ketika kita melakukan merge pada suatu merge namun branch tersebut memiliki suat
 3. branch main akan berisi sesuai yang kita pilih
 
 ![git-conflict-4](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/a64e5773d249563c48215344fb1e45993feaf6c3/week-4/images/git-conflict-4.png)
+
+## Responsive Web Design
+
+Responsive Web Design adalah suatu keadaan sebuah halaman web dimana tampilannya akan cocok, rapi dan tetap enak dilihat jika diakses dari perangkat apapun dengan resolusi layar yang berbeda. Secara umum, sebuah halaman web tidak bisa menyesuaikan tampilannya sendiri dengan resolusi layar perangkat yang mengaksesnya.
+
+### Tools Untuk Mengembangkan Responsive Web
+
+Tools atau alat yang biasa digunakan oleh seorang developer biasanya terdapat pada bawaan browser, misal pada browser chrome disebut Chrome Dev Tools. Untuk mengaksesnya kita bisa mengikuti langkah berikut :
+
+1. Buka web browser dan buka laman yang ingin kita cek
+
+![responsive-1]()
+
+2. Klik kanan dan klik inspect
+
+![responsive-2]()
+
+3. Klik logo device sebelah elements
+
+![responsive-3]()
+
+4. Nah disini kita bisa pilih dimensi atau ukuran sesuai yang kita inginkan, jika layout web menyesuaikan dengan yang dipilih dan masih rapi berarti web kita responsive
+
+![responsive-4]()
+
+### Viewport
+
+Viewport adalah istilah untuk area tampilan halaman pada device atau perangkat tampilan. Tag meta ini membuat dimensi konten yang ditampilkan sedemikian rupa sehingga ukuran layar dapat digunakan secara efektif. Dalam hal ini, fungsinya memastikan bahwa semua konten ditampilkan dalam keterbacaan dan akurasi yang sama pada layar dengan ukuran berbeda.Meta tag viewport menyesuaikan halaman web dengan panjang dan lebar layar sehingga browser seluler dapat menampilkan semua konten dengan benar.
+
+Cara menambahkan tag meta viewport pada HTML :
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+```
+
+### CSS Relative Units
+
+CSS unit adalah satuan untuk menentukan ukuran dari suatu elemen atau kontennya. Misal, jika ingin menentukan margin dari sebuah paragraf, kita bisa memberikan nilai tertentu. Nilai ini akan diikuti oleh satuan (CSS unit).
+
+Dalam CSS ada yang namanya absolut units dan relative units, keduanya berbeda secara sifatnya. Absolut akan selalu tetap dalam ukuran layar apapun, sedangkan relative akan menyesuaikan.
+
+Contoh-contoh relative units:
+
+- **%:** Ukurannya relatif terhadap parent element
+- **em:** Ukurannya relatif terhadap font-size dari elemen saat ini
+- **rem:** Ukurannya relatif terhadap font-size root elemen (<html>). "rem" = "root em"
+- **ch:** Ukurannya mengikuti jumlah karakter (1 karakter sama dengan lebar dari karakter 0/nol font yang sedang aktif)
+- **vh:** Ukurannya relatif terhadap tinggi viewport (ukuran jendela tau aplikasi), 1vh = 1/100 dari tinggi viewport
+- **vw:** Ukurannya relatif terhadap lebar dari viewport. 1vw = 1/100 lebar viewport
+- **vmin:** Ukurannya relatif terhadap ukuran viewport yang lebih kecil (misalnya diorientasi portrait, lebar akan lebih kecil daripada tinggi). 1vmin = 1/100 dari ukuran viewport yang lebih kecil.
+- **vmax:** Sama dengan vmin, dia akan melihat ukuran viewport yang lebih besar
+- **ex:** Ukurannya relatif terhadap tinggi dari karakter "x" kecil font yang sedang aktif.
+
+### Contoh Implementasi Relative CSS Units:
+
+1. Masukkan kode- kode berikut:
+
+HTML code:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responisve Web Design</title>
+</head>
+
+<body>
+    <div class="box1">
+        This box has padding set to 1em, and has a font-size of 20px.
+    </div>
+    <div class="box2">
+        This box also has padding set to 1em, and has a font-size of 40px.
+    </div>
+</body>
+
+</html>
+```
+
+CSS code :
+
+```
+.box1 {
+    width: 300px;
+    font-size: 10px;
+    padding: 2em;
+    border: 4px solid #ccc;
+    margin-bottom: 20px;
+  }
+
+  .box2 {
+    width: 300px;
+    font-size: 20px;
+    padding: 1em;
+    border: 4px solid #ccc;
+  }
+```
+
+2. Hasilnya akan seperti ini:
+
+![responsive-5]()
+
+Dari implementasi di atas bisa disimpulkan bahwa units em adalah units relative karena mengikuti ukuran dari suatu font-size. misal font-sizenya 10px dengan padding 2em, ukuran 10px akan dikali 2 sehingga 2em sama dengan 20px. Sedangkan di box-2 padding 1 em menyesuaikan juga dengan font-sizenya yaitu 20px karena hanya 1em, 20 dikalikan 1 hasilnya akan sama yaitu 20px.
+
+### Media-Query
+
+Media query merupakan modul CSS3 yang berguna membuat layout kita responsive dengan menyesuaikan tampilan berdasarkan ukuran layar perangkat.
+
+Terkadang tampilan yang sudah kita desain dengan sedemikian rupa bisa kacau jika ditampilkan pada tampilan mobile. Dengan media query kita dapat menyelesaikan masalah ini dengan menentukan aturan ukuran dan tata letak elemen dengan kondisi-kondisi tertentu
+
+Media query juga disebut dengan Breakpoint, karena cara kerja media query yakni dengan cara mengecheck ukuran viewport(layar/area dimana konten terlihat) apakah sesuai dengan kondisi yang kita deklarasikan, jika benar maka kode dalam kondisi tersebut yang akan dieksekusi. Dengan kata lain media query memberikan kemampuan menggunakan kode css yang sesuai dengan kondisi yang ditentukan.
+
+Contoh implementasi :
+
+- Code HTML
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responisve Web Design</title>
+</head>
+
+<body>
+    <div>
+        <h1>Latihan Media Query</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUKiCsH1MQag8ItwI6a65oorHPgtIZxUOR4g&usqp=CAU"
+            alt="nanas">
+        </div>
+
+</body>
+
+
+</html>
+```
+
+- Code CSS
+
+```
+@media only screen and (min-width: 1200px) {
+    div {
+        display: flex;
+    }
+    img {
+        margin: 0px 20px;
+    }
+  }
+```
+
+Hasilnya :
+
+Jika kurang dari 1200px:
+
+![responsive-6]()
+
+Jika lebih dari 1200px
+
+![responsive-7]()
+
+Image akan berada di kanan atau displaynya flex
+
+### Flexbox dan Grid
+
+Flexbox dan Grids sama-sama berfungsi untuk mengatur tampilan sebuah halaman web menjadi lebih terstruktur dan rapi. Perbedaannya hanya terletak pada arah pembagian dimensinya saja.
+
+Flexbox hanya dapat mengatur arah pembagian dimensi tampilan hanya secara horizontal saja atau secara vertikal saja.
+
+Sebagai contoh, pada flexbox, jika kita atur arahnya menjadi "kolom", maka tampilannya hanya terbagi rata secara vertikal. Begitu juga dengan arah "baris" yang akan secara horizontal.
+
+Contoh Implementasi flexbox :
+
+- Code HTML
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Web Design</title>
+</head>
+
+<body>
+    <div id="flex">
+        <div>
+            BOX 1
+        </div>
+        <div>
+            BOX 2
+        </div>
+        <div>
+            BOX 3
+        </div>
+        <div>
+            BOX 4
+        </div>
+    </div>
+</body>
+
+</html>
+```
+
+- Code Css
+
+```
+#flex {
+    display: flex;
+}
+
+#flex div {
+    background-color: blue;
+    padding: 20px;
+    margin: 10px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+```
+
+Hasilnya:
+
+![flebox]()
+
+Contoh Implementasi Grid :
+
+- Code HTML :
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Web Design</title>
+</head>
+
+<body>
+    <div id="grid">
+        <div class="box-1">
+            BOX 1
+        </div>
+        <div class="box-2">
+            BOX 2
+        </div>
+        <div class="box-3">
+            BOX 3
+        </div>
+        <div class="box-4">
+            BOX 4
+        </div>
+    </div>
+</body>
+
+</html>
+```
+
+- Code CSS
+
+```
+#grid {
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'left left right right'
+    'footer footer footer footer';
+}
+
+#grid div {
+    background-color: blue;
+    padding: 20px;
+    margin: 1px;
+    border: 2px;
+}
+
+.box-1 {
+    grid-area: header;
+}
+
+.box-2 {
+    grid-area: left;
+}
+
+.box-3 {
+    grid-area: right;
+}
+
+.box-4 {
+    grid-area: footer;
+}
+```
+
+Hasilnya :
+
+![grid]()
+
+## Bootstrap
+
+Bootstrap adalah sebuah framework css yang fungsinya untuk memudahkan kita dalam melakukan styling pada web dan memudahkan kita untuk membuat web yang responsive.
+
+Untuk lebih jelasnya kita langsung saja masuk ke dalam implementasi:
+
+1. Untuk memasukkan Bootstrap secara online bisa menggunakan cdn
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    /// Memasukkan Bootstrap secara online
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Responsive Web Design</title>
+</head>
+
+<body>
+</body>
+
+</html>
+```
+
+2. Kita coba menggunakan class-class dalam bootstrap seperti berikut:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Responsive Web Design</title>
+</head>
+
+<body>
+    <h1 class="container bg-primary">Hello World!</h1>
+
+    </div>
+
+</body>
+
+</html>
+```
+
+Hasilnya:
+
+![Bootstrap-1]()
+
+### Layout dalam Bootstrap
+
+Layout dalam bootstrap menggunakan row dan col seperti grid pada css, dan class container sebagai penampung utamanya.
+
+Berikut Contoh Penerapanya:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Responsive Web Design</title>
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="row gy-6">
+            <div class="col-6">
+                <div class="p-3 border bg-primary">BOX 1</div>
+            </div>
+            <div class="col-6">
+                <div class="p-3 border bg-primary">BOX 2</div>
+            </div>
+            <div class="col-6">
+                <div class="p-3 border bg-primary">BOX 3</div>
+            </div>
+            <div class="col-6">
+                <div class="p-3 border bg-primary">BOX 4</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+```
+
+Hasilnya :
+
+![Bootstrap-2]()
+
+### Component Bootstrap
+
+Ada banyak sekali component-component pada bootstrap yang memudahkan dan mempercepat development pada suatu web, contoh component bootstraps :
+
+- Alert
+- Carousel
+- Card
+- Button
+- Modal
+- Dan masih banyak lagi kita bisa cek di official [bootstrap](https://getbootstrap.com/docs/5.0/components)
+
+berikut contoh salah satu penggunaan component bootstrap yaitu component Card
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Responsive Web Design</title>
+</head>
+
+<body>
+    <div class="row row-cols-1 row-cols-6">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1665856314098-4aa9ff7a3d76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1665807897792-86ece12fd7e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1665683607528-f1bed144ce6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
+```
+
+Hasilnya :
+
+![Bootstrap-3]()
