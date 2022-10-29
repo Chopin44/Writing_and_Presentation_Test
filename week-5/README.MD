@@ -18,7 +18,7 @@ Dynamic Web Server adalah sebuah web server yang kontennya berubah-ubah setiap w
 
 ### Arsitektur Static/Dynamic Web Server
 
-![web-server-1]()
+![web-server-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/2392593b8853f7d2387a88e937796e148fd1aae8/week-5/images/web-server-1.png)
 
 Dapat dilihat pada gambar tersebut ada tambahan database dan templating engine jika dalam Dynamic Web Server, seperti penjelasan sebelumnya dynamic web server membutuhkan sebuah database untuk mengubah data di dalam web namun tidak mengubah codingan yang ada dalam file HTMLnya misal.
 
@@ -83,7 +83,7 @@ Kita bisa mendownload nya pada link [ini](https://nodejs.org/en/), setelah mendo
 Kita bisa cek apakah node js berhasil diinstall dengan mengetik
 `node -v` pada CLI kita.
 
-![node-js-1]()
+![node-js-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/2392593b8853f7d2387a88e937796e148fd1aae8/week-5/images/node-js-1.png)
 
 ### Built-in Modul pada Node JS
 
@@ -154,7 +154,7 @@ Express JS adalah salah satu framework javascripts yang didesain khusus untuk me
 
 #### Apa itu backend application?
 
-![backend-1]()
+![backend-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/2392593b8853f7d2387a88e937796e148fd1aae8/week-5/images/backend-1.png)
 
 Back end app adalah aplikasi yang berjalan di server-side yang bekerja untuk memberikan informasi berupa data sesuai request dari client / browser / front end app. Umumnya server-side app membuat REST API
 
@@ -257,11 +257,11 @@ ERM atau Entitas Relationship Models adalah sebuah pendekatan dimana kita membua
 
 Contoh ERM :
 
-![erm-1]()
+![erm-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/2392593b8853f7d2387a88e937796e148fd1aae8/week-5/images/erm-1.png)
 
 Setelah membuat ERM, kita bisa mengubahnya ke dalam bentuk ERD yaitu Entity Relationship Digram, berikut contohnya:
 
-![erm-2]()
+![erm-2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/2392593b8853f7d2387a88e937796e148fd1aae8/week-5/images/erm-2.png)
 
 #### normalisasi
 
@@ -290,14 +290,14 @@ Ada 3 tahap leve; dalam melakukan normalisasi yaitu:
 
 1. Data ini belum dinormalisasi
 
-![unf]()
+![unf](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/2392593b8853f7d2387a88e937796e148fd1aae8/week-5/images/unf.png)
 
 2. Tahap 1NF
 
-![1NF]()
+![1NF](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/2392593b8853f7d2387a88e937796e148fd1aae8/week-5/images/1NF.png)
 
 3. Tahap 2NF
 
-![2NF]()
+![2NF](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/2392593b8853f7d2387a88e937796e148fd1aae8/week-5/images/2NF.png)
 
 Data tersebut sudah tidak ada anomali sehingga tidak perlu lanjut ke dalam tahap 3NF
