@@ -27,15 +27,15 @@ npx sequelize-cli init
 npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
 ```
 
-Folder yang terbuat
+Folder yang terbuat :
 
-![sequileze - 1]()
+![sequileze - 1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/sequileze%20-%201.png)
 
 Dan isi models dan migrations:
 
-![sequileze - 2]()
+![sequileze - 2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/sequileze%20-%202.png)
 
-![sequileze - 3]()
+![sequileze - 3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/sequileze%20-%203.png)
 
 dengan perintah `db:migrate` akan menjalankan sebuah file di dalam migrations yang didalamnya lagi ada kode berakhiran dengan `up` sedangkan perintah `db:undo` akan menjalankan perintah code yang berakhiran down.
 
@@ -53,11 +53,11 @@ npx sequelize-cli seed:generate --name demo-user
 
 File baru akan tampil di dalam folder seeder:
 
-![sequileze - 4]()
+![sequileze - 4](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/sequileze%20-%204.png)
 
 Selanjutnya kita isikan record apa saja sesuai field-field yang kita buat contoh:
 
-![sequileze - 5]()
+![sequileze - 5](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/sequileze%20-%205.png)
 
 Dan jalankan perintah `npx sequelize-cli db:seed:all` maka record pun terisi otomatis.
 
@@ -123,11 +123,11 @@ Untuk lebih jelasnya kita masuk ke dalam implementasi langsung, sebelumnya insta
 
 1. Jika sudah menginstall mongoDB dengan benar, bisa mengeceknya dengan CLI ketikkan perintah `mongosh`
 
-![mongo - 1]()
+![mongo - 1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/mongo%20-%201.png)
 
 2. Untuk mengecek database yang ada di dalamnya bisa mengetikkan perintah `show databases;`
 
-![mongo - 2]()
+![mongo - 2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/mongo%20-%202.png)
 
 3. Berikutnya coba masukkan sebuah dokumen ke dalam database, sebelumnya gunakan perintah `use <database>` untuk memilih database yang ingin dikelola, kemudian ketikkan perintah sebagai berikut:
 
@@ -139,7 +139,7 @@ db.inventory.insertMany([
 ])
 ```
 
-![mongo - 3]()
+![mongo - 3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/mongo%20-%203.png)
 
 4. Untuk memastikan record sudah masuk bisa menggunakan perintah
 
@@ -147,17 +147,17 @@ db.inventory.insertMany([
 db.inventory.find({})
 ```
 
-![mongo - 4]()
+![mongo - 4](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/mongo%20-%204.png)
 
 5. Untuk lebih jelas lagi dalam memonitor mongoDB bisa menggunakan sebuah GUI untuk mongoDB yaitu mongoDB compass, bisa di install di [sini](https://downloads.mongodb.com/compass/mongodb-compass-1.33.1-darwin-x64.dmg)
 
 6. Setelah menginstall bisa mengoneksikannya dengan database mongo kita, URL default mongo biasanya adalah `mongodb://localhost:27017`
 
-![mongo - 5]()
+![mongo - 5](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/mongo%20-%205.png)
 
 7. kemudian klik konek dan hasilnya akan seperti ini, kita bisa melihat database dan collection-collection yang ada:
 
-![mongo - 6]()
+![mongo - 6](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/mongo%20-%206.png)
 
 Nah dapat dilihat pada struktur data pertama dan kedua yang ada, mongoDB atau NOSQL membolehkan suatu record diisi fleksibel dan bebas tanpa suatu field-field yang sama. Itulah yang menjadi perbedaan SQL dan NoSQL.
 
@@ -219,7 +219,7 @@ app.listen(1212, (err) => {
 
 Jika berhasil akan muncul log koneksi berhasil seperti ini :
 
-![mongoose - 1]()
+![mongoose - 1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/mongoose%20-%201.png)
 
 3. Setelah terkoneksi kita coba membuat models. contoh codingan:
 
@@ -262,7 +262,7 @@ router.get("/", async (req, res) => {
 
 Berikut hasil API-nya :
 
-![mongoose - 2]()
+![mongoose - 2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/mongoose%20-%202.png)
 
 ## Docker
 
@@ -276,7 +276,7 @@ Docker akan menyediakan hal-hal yang diperlukan untuk aplikasi mulai dari akses 
 
 Cara kerja sebuah docker memang mirip sekali dengan sebuah Virtual Machine, yang membedakannya adalah pada saat berjalannya suatu docker tidak butuh sebuah OS standalone untuk berjalan. Sedangkan VM membutuhkan OS di setiap VM nya.
 
-![docker - 1]()
+![docker - 1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/docker%20-%201.png)
 
 Ketika kita ingin menjalankan 3 VM, setiap VM harus menginstall sebuah OS di masing-masing VM, ini membutuhkan resource yang lebih banyak dan sudah pasti waktu dalam pembuatannya pun akan lebih lama.
 
@@ -287,26 +287,26 @@ Berbeda dengan Docker, ketika kita ingin membuat 3 aplikasi, atau 3 ekosistem, d
 1. Install docker sesuai OS kita, bisa cek ke situs [official](https://docs.docker.com/engine/install/) nya
 2. Ketika docker sudah berhasil di install, kita bisa coba cek untuk memastikannya dengan perintah `docker run hello-world` di CLI.
 
-   ![docker - 2]()
+   ![docker - 2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/docker%20-%202.png)
 
    Sebenarnya pada log di atas ada sebuah tulisan mengenai pull, nah disitu dijelaskan bahwa image local kita belum ada image hello-world. Sehingga terjadilah pull atau yang artinya mendownload image yang ada di dalam cloud docker, ada dalam docker hub.
 
 3. Docker ternyata benar-benar berhasil di install, kita bisa coba buka docker desktop, disitu ada beberapa image yang sudah saya install
 
-   ![docker - 3]()
+   ![docker - 3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/docker%20-%203.png)
 
    sudah dijelaskan diatas ketika kita menjalankan perintah `docker run hello-world` berguna untuk menjalankan image hello-world sekaligus menge pull atau mendownload image dari cloud ketika kita tidak mempunyai img di dalam local.
 
 4. kita bisa jalankan ulang dalam tab container, setiap container membutuhkan image untuk menjalankan container, dan setiap image di jalankan akan membuat sebuah container baru, berikut contohnya :
 
-   ![docker - 4]()
+   ![docker - 4](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/docker%20-%204.png)
 
    terlihat ada 3 container
 
-   ![docker - 5]()
+   ![docker - 5](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/docker%20-%205.png)
 
    kita coba jalankan image mongo dan buat container baru dengan klik run berikut
 
-   ![docker - 6]()
+   ![docker - 6](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/c3d2742f1f3217c9e8971591f1e32f117ad9e646/week-7/images/docker%20-%206.png)
 
    terilhat container baru berhasil ditambahkan dan dalam keadaan aktif, kita bisa matikan kembali dengan pencet simbol kotak.
