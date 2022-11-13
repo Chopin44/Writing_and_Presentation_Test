@@ -50,27 +50,27 @@ Setelah melalui tahap di atas kita bisa melanjutkan tahap berikut:
 
 1. Karena saya menggunakan Xampp, pertama buka XAMPP lalu aktifkan MYSQL
 
-![database-1]()
+![database-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/database-1.png)
 
 2. Selanjutnya buka sebuah software kelola database bisa menggunakan phpmyadmin di XAMPP namun saya akan menggunakan tableplus untuk mempermudah kelola, bisa install di [sini](https://tableplus.com/windows)
 
-![database-2]()
+![database-2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/database-2.png)
 
 3. Membuat koneksi baru, bisa klik create new connection, dan pilih vendor yang dipakai, pilih MYSQL
 
-![database-3]()
+![database-3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/database-3.png)
 
 4. Selanjutnya bisa mengisinya sebagai berikut untuk bisa terkoneksi dengan MYSQL
 
-![database-4]()
+![database-4](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/database-4.png)
 
 5. Tampilan berikut jika koneksi berhasil dan masuk, klik logo database akan terlihat database yang terinstall
 
-![database-5]()
+![database-5](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/database-5.png)
 
 6. Untuk selanjutnya kita bisa masukkan query-query SQL pada tampilan ini dengan klik logo sql
 
-![database-6]()
+![database-6](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/database-6.png)
 
 ### Contoh Query-Query Simpel dalam MYSQL
 
@@ -256,13 +256,13 @@ Ada 2 jenis autentikasi yaitu:
 
 Single Factor Authentication merupakan sebuah autentikasi yang hanya menggunakan satu lapisan keamanan, seperti contoh login dengan email dan password.
 
-![autentikasi-1]()
+![autentikasi-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/autentikasi-1.jpg)
 
 2. Multi Factor Authentication
 
 Multi Factor Authentication merupakan sebuah autentikasi yang menggunakan dua lapisan keamanan, seperti contoh login dengan email dan password, namun ada lapisan keamanan lagi setelahnya yaitu mencocokkan nomor pada device yang terkait. Seperti contoh aplikasi Google Authenticator.
 
-![autentikasi-2]()
+![autentikasi-2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/autentikasi-2.png)
 
 ### Encryption dan decryption
 
@@ -278,7 +278,7 @@ Untuk selanjutnya kita akan mencoba membuat sebuah api dengan sebuah autentikasi
 
 1. Install Express Seperti Biasa dan gunakan metode modular, dan library nodemon
 
-![autentikasi-3]()
+![autentikasi-3](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/autentikasi-3.jpg.png)
 
 2. Buat file auth.js didalam folder routes, isikan kode berikut:
 
@@ -343,11 +343,11 @@ npm run dev
 
 4. post data di endpoint auth
 
-![autentikasi-4]()
+![autentikasi-4](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/autentikasi-4.png)
 
 5. kita akan mendapatkan sebuah token acak, ini bisa dilakukan untuk mendapatkan id dari login, coba mendapatkan id dengan cara berikut:
 
-![autentikasi-5]()
+![autentikasi-5](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/autentikasi-5.jpg.png)
 masukkan token di kolom auth -> bearer -> dan isikan pada kotak bearer token
 
 ## Sequileze
@@ -379,7 +379,7 @@ npx sequelize-cli init
 
 2. Ketika sudah terinstall dan sudah di inisiasi kita dapat mengatur config.json sesuaikan dengan database kita
 
-![sequileze-1]()
+![sequileze-1](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/sequileze-1.png)
 
 3. Selanjutnya kita bisa menjalankan sequelize-cli di terminal untuk membuat database dengan perintah berikut:
 
@@ -395,7 +395,7 @@ npx sequelize-cli model:generate --name User --attributes email:string,password:
 
 5. Cek database apakah sesuai
 
-![sequileze-2]()
+![sequileze-2](https://github.com/Chopin44/Writing_and_Presentation_Test/blob/e29c2f45a2fc192d8f3037d663059ca9df3ef298/week-6/images/sequileze-2.png)
 
 6. Mengisi database dengan method post
 
